@@ -26,4 +26,11 @@ app.use((err, _req, res, _next) => {
   fail(res, status, message);
 });
 
+app.get('/', (_req, res) => {
+  res.json({
+    success: true,
+    message: 'Sistem Kasir Hiroo POS API berjalan',
+  });
+});
+
 export default app;
